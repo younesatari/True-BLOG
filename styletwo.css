@@ -1,0 +1,84 @@
+/* HEADER */
+.header h1{
+   color:#626262;
+}
+
+/* Article */
+.text{
+   line-height: 2.2;
+}
+
+.tags{
+   display:flex;
+   align-items: center;
+   font-size: .8rem;
+   color:rgb(32, 32, 32,.6);
+}
+
+.tags i{
+   margin-right: .3rem;
+}
+
+.tags span{
+   margin-left: .25rem;
+   cursor: pointer;
+}
+
+.article-lists{
+   font-size: .8rem;
+}
+
+/* Next Posts Button */
+.next-post{
+   margin: 3.5rem 0;
+}
+
+.nextpost-arrow{
+   color:#202020;
+   margin: 0 .3rem;
+}
+
+/* YOU MAY ALSO LIKE "SECTION" */
+.other-articles{
+   background: #fff;
+   padding:1rem;
+}
+
+.other-articles h2{
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-bottom: 2rem;
+   padding-bottom: .5rem;
+   position: relative;
+}
+
+.other-articles h2::after{
+   content: "";
+   height:1px;
+   width:65px;
+   background:rgb(32, 32, 32,.4);
+   position: absolute;
+   left:0;
+   bottom:0;
+}
+
+.articles-section{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+
+.articl{
+   margin-bottom: 1rem;
+   padding:.4rem;
+}
+
+.articl p{
+   font-family: serif;
+}
+
+/* Media Query */
+@media(max-width:500px){
+   .articles-section{
+      grid-template-columns: 1fr;
+   }
+}
